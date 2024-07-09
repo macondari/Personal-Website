@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        h1 {
+            color: white;
+            font-family: "Roboto", sans-serif;
+            font-size: 3em;
+            margin-bottom: 1em;
+            margin-top: 2em;
+            text-align: left;
+            text-decoration: underline white; 
+        }
+        h2 {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            margin-bottom: 1em;
+            margin-top: 3em;
+            text-align: left;
+        }
+        body {
+            background-color: rgb(78, 38, 78);
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        .title-paragraph {
+            font-size: 1.5em;
+            text-align: left;
+        }
+        nav {
+            background-color: white; /* Background color of the navigation bar */
+            text-align: right;
+            padding: 10px 0; /* Padding around the links */
+        }
+        nav a {
+            color: rgb(78, 38, 78); /* Color of the links */
+            text-decoration: none; /* Remove underline from links */
+            margin: 0 10px; /* Space between each link */
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        .projects-container {
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-around; /* Distribute items evenly */
+            flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+        }
+        .project {
+            width: 45%; /* Set width of each project */
+            margin-bottom: 3em; /* Space between each project */
+            text-align: center; /* Center align content inside project */
+        }
+        .project img {
+            width: 100%; /* Make images fill their container */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .caption {
+            margin-top: 0.5em;
+            background-color: rgb(250, 184, 250);
+            padding: 10px;
+            font-size: 1.2em;
+            text-align: left; /* Align captions to the left */
+        }
+    </style>
+    <title>Homepage</title>
+</head>
+<body>
+    <nav>
+        <a href="Media.html">About Me</a>
+        <a href="Michaela Condari Resume.pdf">Resume</a>
+        <a href="Homepage.html">Homepage</a>
+        <!-- Add more links as needed -->
+    </nav>
+
+    <h1>My Projects</h1>
+    <h2>Project #1: Matching Game</h2>
+
+    <div class="projects-container">
+        <div class="project">
+            <img src="Matching Game Photos/Match1.png" alt="Matching Game Screenshot">
+            <p class="caption">This photo is a screenshot of the opening page of the matching game, the rules are laid out in a textbox on the left side of the screen and six buttons are functional for the game, there is also a label to display the number of guesses and the number of correct guesses.</p>
+        </div>
+
+        <div class="project">
+            <img src="Matching Game Photos/Match3.png" alt="Third Game Screenshot">
+            <p class="caption">This photo shows the final screen when the user wins the game, you can see that the guess count has been recorded as 7, and the score is at its maximum which is 3. The start button can also be pressed to start my random shuffling algorithm to restart the game.</p>
+        </div>
+    </div>
+
+</body>
+</html>
+

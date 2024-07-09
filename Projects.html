@@ -22,6 +22,14 @@
             margin-top: 3em;
             text-align: left;
         }
+        h3{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            margin-bottom: 1em;
+            margin-top: 3em;
+            text-align: left;
+        }
         body {
             background-color: rgb(78, 38, 78);
             margin: 0; /* Remove default body margin */
@@ -63,11 +71,28 @@
             height: auto; /* Maintain aspect ratio */
         }
         .caption {
+            color: black;
             margin-top: 0.5em;
             background-color: rgb(250, 184, 250);
             padding: 10px;
             font-size: 1.2em;
             text-align: left; /* Align captions to the left */
+        }
+        .videocaption{
+            color: black;
+            margin-top: 0.5em;
+            background-color: rgb(250, 184, 250);
+            padding: 10px;
+            font-size: 1.2em;
+            text-align: left; /* Align captions to the left */
+            width: 90%; /* Adjust width of video caption */
+            margin: 0 auto; /* Center video caption horizontally */
+        }
+        .project video {
+            width: 90%; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* video occupies full width */
+            margin: 0 auto; /* Center video horizotal */
         }
     </style>
     <title>Homepage</title>
@@ -78,10 +103,21 @@
         <a href="Michaela Condari Resume.pdf">Resume</a>
         <a href="Homepage.html">Homepage</a>
         <!-- Add more links as needed -->
+        <!--make sure to have link to each page so you can move around website-->
     </nav>
 
     <h1>My Projects</h1>
-    <h2>Project #1: Matching Game</h2>
+    <h2>Project #1: VR Game for unity</h2>
+    <div class="project">
+        <video controls>
+            <source src="path/to/your/video.mp4" type="video/mp4">
+            <!-- Add more <source> elements for different video formats if needed -->
+            Your browser does not support the video tag.
+        </video>
+        <p class="videocaption">In this video, I showcase a Unity and C# game developed for the Meta Oculus 3 platform. The game features an intuitive UI design, including an interactive instruction menu with a start button. Key elements include a functional UI stopwatch, dynamically spawning hurdles with adjustable speeds via Meta Oculus controllers, and immersive visual effects like ground dirt and collision-triggered smoke clouds. </p>
+    </div>
+
+    <h3>Project #2: Matching Game</h3>
 
     <div class="projects-container">
         <div class="project">

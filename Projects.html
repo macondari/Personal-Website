@@ -14,20 +14,10 @@
             text-align: left;
             text-decoration: underline white; 
         }
-        h2 {
+        h2, h3, h4 {
             color: white;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.5em;
             margin-bottom: 1em;
-            margin-top: 3em;
-            text-align: left;
-        }
-        h3{
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.5em;
-            margin-bottom: 1em;
-            margin-top: 3em;
             text-align: left;
         }
         body {
@@ -42,11 +32,13 @@
             text-align: left;
         }
         nav {
+            /* controls nav bar background format */
             background-color: white; /* Background color of the navigation bar */
             text-align: right;
             padding: 10px 0; /* Padding around the links */
         }
         nav a {
+            /* controls nav bar  anchors (ie. the text on the bar) */
             color: rgb(78, 38, 78); /* Color of the links */
             text-decoration: none; /* Remove underline from links */
             margin: 0 10px; /* Space between each link */
@@ -54,15 +46,17 @@
             font-size: 1.2em;
         }
         nav a:hover {
+            /* controls what happens when you hover over the anchor section of the nav bar */
             text-decoration: underline; /* Underline on hover */
         }
         .projects-container {
-            display: flex; /* Use flexbox for layout */
+            /* controls overall format of photos, specified as a class in the div for the photo section */
+            display: flex; /* Use flexbox for layout, this allows two column format, This property turns the .projects-container into a flex container, allowing you to use flex properties on its children (project divs). */
             justify-content: space-around; /* Distribute items evenly */
-            flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+            flex-wrap: wrap; /* Allow items to wrap to next line if needed and stay within container */
         }
         .project {
-            width: 45%; /* Set width of each project */
+            width: 45%; /* Set width of each project, at 45% to make sure it stays within flexbox */
             margin-bottom: 3em; /* Space between each project */
             text-align: center; /* Center align content inside project */
         }
@@ -88,11 +82,16 @@
             width: 90%; /* Adjust width of video caption */
             margin: 0 auto; /* Center video caption horizontally */
         }
-        .project video {
+        .video-wrapper {
+            /* controls overall format of video, specified as a class in the div for the video section */
+            text-align: center; /* Center align content */
+            margin-bottom: 3em; /* Space below video */
+        }
+        .video-wrapper video {
             width: 90%; /* Adjust width as needed */
             height: auto; /* Maintain aspect ratio */
-            display: block; /* video occupies full width */
-            margin: 0 auto; /* Center video horizotal */
+            display: block; /* Ensure video occupies full width */
+            margin: 0 auto; /* Center video horizontally */
         }
     </style>
     <title>Homepage</title>
@@ -103,21 +102,28 @@
         <a href="Michaela Condari Resume.pdf">Resume</a>
         <a href="Homepage.html">Homepage</a>
         <!-- Add more links as needed -->
-        <!--make sure to have link to each page so you can move around website-->
     </nav>
 
     <h1>My Projects</h1>
-    <h2>Project #1: VR Game for unity</h2>
-    <div class="project">
+    
+    <h2>Project #1: VR Game</h2>
+    <h4>Made using C# and Unity for Meta Occulus 3</h4>
+    <div class="video-wrapper">
         <video controls>
             <source src="path/to/your/video.mp4" type="video/mp4">
             <!-- Add more <source> elements for different video formats if needed -->
             Your browser does not support the video tag.
         </video>
-        <p class="videocaption">In this video, I showcase a Unity and C# game developed for the Meta Oculus 3 platform. The game features an intuitive UI design, including an interactive instruction menu with a start button. Key elements include a functional UI stopwatch, dynamically spawning hurdles with adjustable speeds via Meta Oculus controllers, and immersive visual effects like ground dirt and collision-triggered smoke clouds. </p>
+        <p class="videocaption">
+            The game features an intuitive UI design, including an interactive instruction menu with a start button. Key elements include a functional UI stopwatch, dynamically spawning hurdles with adjustable speeds via Meta Oculus controllers, and immersive visual effects like ground dirt and collision-triggered smoke clouds.
+        </p>
     </div>
 
-    <h3>Project #2: Matching Game</h3>
+    <h3>Project #2: Hangman Game</h3>
+    <h4>Made using Console Application on Visual Studio</h4>
+
+    <h3>Project #3: Matching Game</h3>
+    <h4>Made using Windows Forms Application on Visual Studio</h4>
 
     <div class="projects-container">
         <div class="project">
@@ -133,4 +139,3 @@
 
 </body>
 </html>
-

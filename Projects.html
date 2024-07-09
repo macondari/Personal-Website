@@ -12,7 +12,7 @@
             margin-bottom: 1em;
             margin-top: 2em;
             text-align: left;
-            text-decoration: underline white; 
+            text-decoration: underline white; /* controls nav bar background format */
         }
         h2, h3, h4 {
             color: white;
@@ -32,13 +32,11 @@
             text-align: left;
         }
         nav {
-            /* controls nav bar background format */
             background-color: white; /* Background color of the navigation bar */
             text-align: right;
             padding: 10px 0; /* Padding around the links */
         }
         nav a {
-            /* controls nav bar  anchors (ie. the text on the bar) */
             color: rgb(78, 38, 78); /* Color of the links */
             text-decoration: none; /* Remove underline from links */
             margin: 0 10px; /* Space between each link */
@@ -46,23 +44,23 @@
             font-size: 1.2em;
         }
         nav a:hover {
-            /* controls what happens when you hover over the anchor section of the nav bar */
             text-decoration: underline; /* Underline on hover */
         }
         .projects-container {
-            /* controls overall format of photos, specified as a class in the div for the photo section */
-            display: flex; /* Use flexbox for layout, this allows two column format, This property turns the .projects-container into a flex container, allowing you to use flex properties on its children (project divs). */
+            display: flex; /* Use flexbox for layout, this allows two column format */
             justify-content: space-around; /* Distribute items evenly */
             flex-wrap: wrap; /* Allow items to wrap to next line if needed and stay within container */
         }
         .project {
-            width: 45%; /* Set width of each project, at 45% to make sure it stays within flexbox */
+            width: 45%; /* Set width of each project */
             margin-bottom: 3em; /* Space between each project */
             text-align: center; /* Center align content inside project */
         }
         .project img {
             width: 100%; /* Make images fill their container */
             height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Rounded corners for images */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
         }
         .caption {
             color: black;
@@ -72,7 +70,7 @@
             font-size: 1.2em;
             text-align: left; /* Align captions to the left */
         }
-        .videocaption{
+        .videocaption {
             color: black;
             margin-top: 0.5em;
             background-color: rgb(250, 184, 250);
@@ -83,7 +81,6 @@
             margin: 0 auto; /* Center video caption horizontally */
         }
         .video-wrapper {
-            /* controls overall format of video, specified as a class in the div for the video section */
             text-align: center; /* Center align content */
             margin-bottom: 3em; /* Space below video */
         }
@@ -92,6 +89,8 @@
             height: auto; /* Maintain aspect ratio */
             display: block; /* Ensure video occupies full width */
             margin: 0 auto; /* Center video horizontally */
+            border-radius: 10px; /* Rounded corners for video */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
         }
     </style>
     <title>Homepage</title>
@@ -119,23 +118,42 @@
         </p>
     </div>
 
-    <h3>Project #2: Hangman Game</h3>
+    <h2>Project #2: Hangman Game</h2>
     <h4>Made using Console Application on Visual Studio</h4>
-
-    <h3>Project #3: Matching Game</h3>
-    <h4>Made using Windows Forms Application on Visual Studio</h4>
-
     <div class="projects-container">
         <div class="project">
-            <img src="Matching Game Photos/Match1.png" alt="Matching Game Screenshot">
-            <p class="caption">This photo is a screenshot of the opening page of the matching game, the rules are laid out in a textbox on the left side of the screen and six buttons are functional for the game, there is also a label to display the number of guesses and the number of correct guesses.</p>
+            <img src="Hangman Game Photos/Picture1.png" alt="Hangman Game Screenshot">
+            <p class="caption">
+                This image shows a clip of the Hangman game in progress. A word selected randomly from a text file is loaded into a dictionary list using StreamReader. The game mechanics include body part additions that update with each incorrect guess, and displaying the text accordingly. Additionally, all letters are converted to uppercase for consistency throughout the game.
+            </p>
         </div>
 
         <div class="project">
-            <img src="Matching Game Photos/Match3.png" alt="Third Game Screenshot">
-            <p class="caption">This photo shows the final screen when the user wins the game, you can see that the guess count has been recorded as 7, and the score is at its maximum which is 3. The start button can also be pressed to start my random shuffling algorithm to restart the game.</p>
+            <img src="Hangman Game Photos/hangman2.png" alt="Hangman Game Screenshot">
+            <p class="caption">
+                The second clip demonstrates the end of the game upon the players's victory, where the text updates to notify the player of their win and reveals the final word. In the event of a loss, a similar message appears, informing the player of their defeat and displaying the final word.
+            </p>
+        </div>
+    </div>
+
+    <h2>Project #3: Matching Game</h2>
+    <h4>Made using Windows Forms Application on Visual Studio</h4>
+    <div class="projects-container">
+        <div class="project">
+            <img src="Matching Game Photos/Match1.png" alt="Matching Game Screenshot">
+            <p class="caption">
+                This photo is a screenshot of the opening page of the matching game, the rules are laid out in a textbox on the left side of the screen and six buttons are functional for the game, there is also a label to display the number of guesses and the number of correct guesses.
+            </p>
+        </div>
+
+        <div class="project">
+            <img src="Matching Game Photos/Match3.png" alt="Matching Game Screenshot">
+            <p class="caption">
+                This photo shows the final screen when the user wins the game, you can see that the guess count has been recorded as 7, and the score is at its maximum which is 3. The start button can also be pressed to start my random shuffling algorithm to restart the game.
+            </p>
         </div>
     </div>
 
 </body>
 </html>
+

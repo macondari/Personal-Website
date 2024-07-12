@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Work Experiences</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            margin-top: 50px;
+        }
+        /* Styles for DREAMS experience */
+        .experience-dreams {
+            margin-bottom: 60px;
+            padding: 30px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .experience-dreams .slideshow-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center; /* Center align items horizontally */
+        }
+        .experience-dreams .slideshow {
+            display: flex;
+            justify-content: center; /* Center align items horizontally */
+        }
+        .experience-dreams .slideshow img {
+            width: 200px; /* Adjust the width as per your preference */
+            height: auto;
+            object-fit: cover;
+            flex-shrink: 0;
+            margin: 0 10px; /* Add some margin between images */
+        }
+        .experience-dreams h2 {
+            color: #6d3e6d;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+        }
+        .experience-dreams p, .experience-dreams ul {
+            color: #777;
+            font-size: 1.4em;
+            line-height: 1.6;
+            text-align: justify;
+            padding: 0 20px;
+        }
+        /* Styles for Cave Springs Camp experience */
+        .experience-cave-springs {
+            margin-bottom: 60px;
+            padding: 30px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .experience-cave-springs .slideshow-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+        .experience-cave-springs .slideshow img {
+            width: auto;
+            height: 300px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .experience-cave-springs h2 {
+            color: #6d3e6d;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+        }
+        .experience-cave-springs p, .experience-cave-springs ul {
+            color: #777;
+            font-size: 1.4em;
+            line-height: 1.6;
+            text-align: justify;
+            padding: 0 20px;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 2em;
+            color: #6d3e6d;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+        .arrow-left {
+            left: 10px;
+        }
+        .arrow-right {
+            right: 10px;
+        }
+        nav {
+            background-color: #6d3e6d;
+            text-align: right;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.3em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <a href="Homepage.html">Homepage</a>
+        <a href="Media.html">About Me</a>
+        <a href="Michaela Condari Resume.pdf">Resume</a>
+        <a href="Projects.html">Projects</a>
+        <!-- Add more links as needed -->
+    </nav>
+
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Volunteer experience section 1: DREAMS -->
+        <div class="experience-dreams">
+            <h2>DREAMS</h2>
+            <!-- Slideshow container for images -->
+            <div class="slideshow-container">
+                <!-- Slideshow content -->
+                <div class="slideshow">
+                    <!-- Images for slideshow -->
+                    <img src="Volunteer Photos/IMG_9869.jpeg" alt="Volunteer Experience">
+                    <img src="Volunteer Photos/IMG_1897.jpeg" alt="Volunteer Experience">
+                    <img src="Volunteer Photos/IMG_5462.jpeg" alt="Volunteer Experience">
+                    <img src="Volunteer Photos/IMG_5463.jpeg" alt="Volunteer Experience">
+                    <img src="Volunteer Photos/IMG_5695.jpeg" alt="Volunteer Experience">
+                    <img src="Volunteer Photos/IMG_2604.jpeg" alt="Volunteer Experience">
+                    <img src="Volunteer Photos/IMG_9962.jpeg" alt="Volunteer Experience">
+                    <img src="Volunteer Photos/IMG_9975.jpeg" alt="Volunteer Experience">
+                </div>
+                <!-- Navigation arrows -->
+                <div class="arrow arrow-left" onclick="plusSlides(-1)">&#10094;</div>
+                <div class="arrow arrow-right" onclick="plusSlides(1)">&#10095;</div>
+            </div>
+            
+            <!-- Experience details -->
+            <p>During my time with the Dominican Republic Education And Medical Supply (DREAMS) program, I was one of 18 students selected to work in the Dominican Republic. As part of a team, I helped organize, promote, and run multiple fundraisers to be put towards supplies to build an aqueduct and basic necessities to donate such as medical supplies and clothes. During the week-long stay in the city of San Jose De Ochoa, I worked on tasks such as moving cinderblocks, making cement, cutting metal bars, and moving buckets of gravel/water.</p>
+        </div>
+
+        <!-- Volunteer experience section 2: Cave Springs Camp -->
+        <div class="experience-cave-springs">
+            <h2>Cave Springs Camp</h2>
+            <!-- Slideshow container for images -->
+            <div class="slideshow-container">
+                <!-- Slideshow content -->
+                <div class="slideshow">
+                    <!-- Images for slideshow -->
+                    <img src="Volunteer Photos/IMG_5464.jpeg" alt="Volunteer Experience">
+                </div>
+            </div>
+            
+            <!-- Experience details -->
+            <p>As a part-time volunteer, I spent over 200 hours working at Cave Springs Camp. My responsibilities included:</p>
+            <ul>
+                <li>Leading a group of up to 10 campers ages 5-12 and working closely in a team with another counselor.</li> 
+                <li>Organizing and hosting events/games for the campers.</li> 
+                <li>Supervising water activities as a NL certified lifeguard.</li> 
+                <li>Various cleaning and housekeeping tasks around cabins and bathrooms.</li>  
+                <li>Coordinating campfire performances with a team of counselors.</li> 
+                <li>Supervising campers at high ropes and belaying.</li> 
+            </ul>
+        </div>
+    </div>
+
+    <!-- JavaScript for slideshow navigation -->
+    <script>
+        var slideIndex = 1;
+        var slides = document.querySelector('.experience-dreams .slideshow').children;
+        var totalSlides = slides.length;
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            if (n > totalSlides) { slideIndex = 1 }
+            if (n < 1) { slideIndex = totalSlides }
+            for (var i = 0; i < totalSlides; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        showSlides(slideIndex);
+    </script>
+
+</body>
+</html>

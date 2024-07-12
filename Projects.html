@@ -85,12 +85,12 @@
             margin-bottom: 3em; /* Space below video */
         }
         .video-wrapper video {
-            width: 90%; /* Adjust width as needed */
-            height: auto; /* Maintain aspect ratio */
-            display: block; /* Ensure video occupies full width */
-            margin: 0 auto; /* Center video horizontally */
-            border-radius: 10px; /* Rounded corners for video */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+            width: 90%; /* adjust width as needed */
+            max-height: 600px; /* Set maximum height for the video */
+            display: block; /*video occupies full width */
+            margin: 0 auto; /* center video horizontally */
+            border-radius: 10px; /* rounded corners for video */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*shadow effect */
         }
     </style>
     <title>Homepage</title>
@@ -100,6 +100,7 @@
         <a href="Media.html">About Me</a>
         <a href="Michaela Condari Resume.pdf">Resume</a>
         <a href="Homepage.html">Homepage</a>
+        <a href="Volunteer Work.html">Volunteer Work</a>
         <!-- Add more links as needed -->
     </nav>
 
@@ -109,9 +110,8 @@
     <h4>Made using C# and Unity for Meta Occulus 3</h4>
     <div class="video-wrapper">
         <video controls>
-            <source src="path/to/your/video.mp4" type="video/mp4">
-            <!-- Add more <source> elements for different video formats if needed -->
-            Your browser does not support the video tag.
+            <source src="VideoGame_Condensed.mp4" type="video/mp4">
+            Your browser does not support the video tag. <!--Dsplay message if video cannot be played-->
         </video>
         <p class="videocaption">
             The game features an intuitive UI design, including an interactive instruction menu with a start button. Key elements include a functional UI stopwatch, dynamically spawning hurdles with adjustable speeds via Meta Oculus controllers, and immersive visual effects like ground dirt and collision-triggered smoke clouds.
@@ -133,6 +133,9 @@
             <p class="caption">
                 The second clip demonstrates the end of the game upon the players's victory, where the text updates to notify the player of their win and reveals the final word. In the event of a loss, a similar message appears, informing the player of their defeat and displaying the final word.
             </p>
+            <p class = "caption"> 
+                You can check out the code on my  <a href="https://github.com/macondari">Github</a>
+            </p>
         </div>
     </div>
 
@@ -149,11 +152,10 @@
         <div class="project">
             <img src="Matching Game Photos/Match3.png" alt="Matching Game Screenshot">
             <p class="caption">
-                This photo shows the final screen when the user wins the game, you can see that the guess count has been recorded as 7, and the score is at its maximum which is 3. The start button can also be pressed to start my random shuffling algorithm to restart the game.
+                This photo shows the final screen when the user wins the game, you can see that the guess count has been recorded as 7, and the score is at its maximum which is 3. The start button can also be pressed to start my random shuffling algorithm to restart the game. 
             </p>
         </div>
     </div>
 
 </body>
 </html>
-

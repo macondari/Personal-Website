@@ -21,7 +21,7 @@
             border-radius: 12px;
             margin-top: 50px;
         }
-        /* Styles for DREAMS experience */
+        /* Styles for DREAMS */
         .experience-dreams {
             margin-bottom: 60px;
             padding: 30px;
@@ -38,14 +38,14 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             margin-bottom: 20px;
             display: flex;
-            justify-content: center; /* Center align items horizontally */
+            justify-content: center; 
         }
         .experience-dreams .slideshow {
             display: flex;
             justify-content: center; /* Center align items horizontally */
         }
         .experience-dreams .slideshow img {
-            width: 200px; /* Adjust the width as per your preference */
+            width: 300px; /* Adjust the width */
             height: auto;
             object-fit: cover;
             flex-shrink: 0;
@@ -59,10 +59,17 @@
         }
         .experience-dreams p, .experience-dreams ul {
             color: #777;
-            font-size: 1.4em;
+            font-size: 1.2em;
             line-height: 1.6;
             text-align: justify;
             padding: 0 20px;
+        }
+        .experience-dreams h3{
+            color: #777;
+            font-size: 1em;
+            line-height: 1.6;
+            text-align: justify;
+            padding: 0 20px; 
         }
         /* Styles for Cave Springs Camp experience */
         .experience-cave-springs {
@@ -93,17 +100,35 @@
             margin-bottom: 10px;
             text-shadow: 2px 2px 3px rgba(0,0,0,0.1);
         }
-        .experience-cave-springs p, .experience-cave-springs ul {
+        .experience-cave-springs p
+         {
             color: #777;
-            font-size: 1.4em;
+            font-size: 1.2em;
             line-height: 1.6;
             text-align: justify;
             padding: 0 20px;
         }
+        .experience-cave-springs h4
+         {
+            color: #777;
+            font-size: 1.0em;
+            line-height: 1.6;
+            text-align: justify;
+            padding: 0 20px;
+        }
+        .experience-cave-springs ul {
+            color: #777;
+            font-size: 1.0em;
+            line-height: 1.6;
+            text-align: justify;
+            padding: 0 20px;
+            font-weight: bold;
+
+        }
         .arrow {
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
+            transform: translateY(-50%); /* center arrow in middle section (ceter of y-axis) */
             cursor: pointer;
             font-size: 2em;
             color: #6d3e6d;
@@ -111,7 +136,7 @@
             padding: 10px;
             border-radius: 50%;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            z-index: 1;
+            z-index: 1; /* corresponds to layering of elements, layers arrow on top of photo */
         }
         .arrow-left {
             left: 10px;
@@ -169,11 +194,19 @@
                 </div>
                 <!-- Navigation arrows -->
                 <div class="arrow arrow-left" onclick="plusSlides(-1)">&#10094;</div>
-                <div class="arrow arrow-right" onclick="plusSlides(1)">&#10095;</div>
+                <div class="arrow arrow-right" onclick="plusSlides(1)">&#10095;</div> <!--&#10095; is the decimal representation of the Unicode character U+27A7, which is the "Black Rightwards Arrow" character (➟).-->
+             <!--plusSlides is a function called from the script to increase the index and calls the show slides function-->
             </div>
             
-            <!-- Experience details -->
-            <p>During my time with the Dominican Republic Education And Medical Supply (DREAMS) program, I was one of 18 students selected to work in the Dominican Republic. As part of a team, I helped organize, promote, and run multiple fundraisers to be put towards supplies to build an aqueduct and basic necessities to donate such as medical supplies and clothes. During the week-long stay in the city of San Jose De Ochoa, I worked on tasks such as moving cinderblocks, making cement, cutting metal bars, and moving buckets of gravel/water.</p>
+            <!-- Experience details (from linkedin) -->
+            <h3>During my time with the Dominican Republic Education And Medical Supply (DREAMS) program, I was one of 18 students selected to work in the Dominican Republic. As part of a team, I helped organize, promote, and run multiple fundraisers to be put towards supplies to build an aqueduct and basic necessities to donate such as medical supplies and clothes. During the week-long stay in the city of San Jose De Ochoa, I worked on tasks such as moving cinderblocks, making cement, cutting metal bars, and moving buckets of gravel/water.</h3>
+            <!-- Essay section-->
+            <p>If someone were to ask me about my favorite part of Dreams, I honestly couldn't choose just one. Every day was filled with moments that I know will stay with me forever. The trip started with a sleepless 4 hour flight followed by a six-hour bus ride to San Jose de Ochoa, (yes, six hours on a bus) but like any road trip the team was lively with activities like old camp games, lively Spanish music on the bus speakers, and a pit stop at McDonald's, the journey got off to an unforgettable start. We spent our first night at a convent in the city before venturing up to a mountain town to begin our work. </p>
+            <p> Our main task was constructing an aqueduct for the mountain town, crucial for collecting rainwater. With guidance from a local civil engineer, our team formed an assembly line up the steep slopes, stacking cinderblocks and mixing cement. The work was hard, but I had tried my best to be prepared physically, squeezing in workouts on the Stairmaster after my shifts at the pool. </p>
+            <p> Beyond the labor, I cherished the moments spent with locals. During lunch breaks, I found joy in pushing local children up and down hills in a wheelbarrow that had stored our supplies. For the kids, these rides were equivalent to a rollercoaster with how steep the roads were. One memorable day, we played baseball with the locals, where I quickly realized my talents lay elsewhere. But nonetheless I had a lot of fun and was able to gift my glove to the town before I left along with other clothes and supplies I had brought. </p>
+            <p>As our time in the mountains drew to a close, a small group of us ventured on a hike down to a reservoir lake nestled at the base of the mountain peak. We could see the lake from our dining area everyday yet we were the first group to make the adventure to the bottom, and I quickly found out why. The breathtaking view from the bottom of the mountain, captured in the slideshow above, made every step worth it. The uphill return hike however, was challenging and nothing compared to the stairmaster, leaving me a sweaty mess at the end, though I would definitely do it again!</p>
+            <p>Reflecting on these experiences, I am amazed by the impact our work had on the community. It wasn't just about building an aqueduct; it was about forging connections, embracing challenges, and learning from each other. The fun we had was undeniable, but more importantly, it  was the significance of our mission. Dreams was not just a journey but, it was a testament to the power of teamwork and the spirit of giving back.</p>
+
         </div>
 
         <!-- Volunteer experience section 2: Cave Springs Camp -->
@@ -188,8 +221,8 @@
                 </div>
             </div>
             
-            <!-- Experience details -->
-            <p>As a part-time volunteer, I spent over 200 hours working at Cave Springs Camp. My responsibilities included:</p>
+            <!-- Experience details (from linkedin) -->
+            <h4>As a part-time volunteer, I spent over 200 hours working at Cave Springs Camp. My responsibilities included:</h4>
             <ul>
                 <li>Leading a group of up to 10 campers ages 5-12 and working closely in a team with another counselor.</li> 
                 <li>Organizing and hosting events/games for the campers.</li> 
@@ -198,29 +231,57 @@
                 <li>Coordinating campfire performances with a team of counselors.</li> 
                 <li>Supervising campers at high ropes and belaying.</li> 
             </ul>
+            <!--essay section-->
+            <p> Camp has been a big part of my life since I was young. I started volunteering at Cave Springs in summer 2019. The training week was a blast—overnight hikes, high ropes, and learning how to organize games for campers were all part of it. </p>
+            <p>Since then, I've volunteered about 1-2 weeks every year, even during COVID-19 when I helped out during March break, Christmas break, and summer camps. I mainly worked with the the day camp staff, using my lifeguard skills for pool time and canoeing. In the evenings, I pitched in with washing dishes, cleaning up, and looking after overnight groups while their counselors took breaks. </p>
+            <p> Day camp was the best placement for me, being a lifeguard meant I could be around for pool activities and canoeing, which I loved. One of my favourite camp activities was "Counselor Paint," where kids would paint us counselors with diluted acrylics and soap. One year, I was stained bright blue all day and was since dubbed "the Smurf counselor" by the kids. </p>
+            <p> Overall, my time at camp was a blast. It taught me a lot about teamwork and leadership, and I made some great memories along the way. </p>
+
         </div>
     </div>
 
     <!-- JavaScript for slideshow navigation -->
     <script>
-        var slideIndex = 1;
-        var slides = document.querySelector('.experience-dreams .slideshow').children;
-        var totalSlides = slides.length;
+  // Initialize slideIndex to 1
+    var slideIndex = 1;
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+// Get all the slides within the element with class 'experience-dreams' and 'slideshow'
+var slides = document.querySelector('.experience-dreams .slideshow').children;
+//Finds all child elements (slides) within the element that has both experience-dreams and slideshow classes. 
+//querySelector is a method in JavaScript that is used to select and return the first element that matches a specified CSS selector from within the document.
 
-        function showSlides(n) {
-            if (n > totalSlides) { slideIndex = 1 }
-            if (n < 1) { slideIndex = totalSlides }
-            for (var i = 0; i < totalSlides; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex - 1].style.display = "block";
-        }
 
-        showSlides(slideIndex);
+// Calculate the total number of slides
+var totalSlides = slides.length;
+
+// Function to move slides forward or backward
+function plusSlides(n) {
+    // Call showSlides function with updated slideIndex
+    showSlides(slideIndex += n);
+}
+
+// Function to display a specific slide
+function showSlides(n) {
+    // If n is greater than totalSlides, reset slideIndex to 1 (start from the beginning)
+    if (n > totalSlides) { 
+        slideIndex = 1;
+    }
+    // If n is less than 1, set slideIndex to totalSlides (go to the last slide)
+    if (n < 1) { 
+        slideIndex = totalSlides;
+    }
+    
+    // Hide all slides by default, catches exception where i is less than totalSlides,also, display: none; hides the element from view on the webpage. It effectively removes it from the layout, as if the element does not exist, this is because if the code enters this loop, it means there the index has gone out of the range of the indexes that have photos.
+    for (var i = 0; i < totalSlides; i++) {
+        slides[i].style.display = "none";
+    }
+    
+    // Display the slide at index slideIndex - 1 (adjust for zero-based index)
+    slides[slideIndex - 1].style.display = "block"; //makes the selected slide visible on the webpage by changing its display behavior. 
+}
+
+// Initially display the first slide when the script runs
+showSlides(slideIndex);
     </script>
 
 </body>

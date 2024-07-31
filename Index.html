@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Combined Page</title>
     <style>
+        /* General Styles */
+        body {
+            background-color: rgb(78, 38, 78);
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav {
+            background-color: rgb(78, 38, 78);
+            text-align: right;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         h1 {
             color: white;
             font-family: "Roboto", sans-serif;
             font-size: 6em;
-            margin-bottom: 0.1em;
-            margin-top: 2em;
+            margin: 2em 0 0.1em;
             text-align: center;
-        }
-        body {
-            background-color: rgb(78, 38, 78);
-            margin: 0; /* Remove default body margin */
-            padding: 0; /* Remove default body padding */
         }
         .title-paragraph {
             color: white;
@@ -24,35 +40,54 @@
             font-size: 1em;
             text-align: center;
         }
-        nav {
-            background-color:  rgb(78, 38, 78); /* Background color of the navigation bar */
-            text-align: right;
-            padding: 10px 0; /* Padding around the links */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(78, 38, 78);
+            color: white;
         }
-        nav a {
-            color: white; /* Color of the links */
-            text-decoration: none; /* Remove underline from links */
-            margin: 0 10px; /* Space between each link */
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.2em;
+        img {
+            width: 30%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
         }
-        nav a:hover {
-            text-decoration: underline; /* Underline on hover */
+        p {
+            text-align: left;
+            font-size: 0.9em; /* Smaller font size for the "All About Me" section */
         }
     </style>
-    <title>Homepage</title>
 </head>
 <body>
     <nav>
-        <a href="Media.html">About Me</a>
-        <a href="Michaela Condari Resume.pdf">Resume</a>
+        <a href="Index.html">Homepage</a>
+        <a href="Media.html">Resume</a>
         <a href="Projects.html">Projects</a>
         <a href="Volunteer Work.html">Volunteer Work</a>
         <a href="MAC.html">MAC</a>
-        <!-- Add more links as needed -->
     </nav>
 
+    
     <h1>Michaela Condari</h1>
+    <img src="Professional Headshot.jpg" alt="Picture of me">
     <p class="title-paragraph">Computer Engineering Student at the University of Waterloo</p>
+
+    <div class="container">
+        <h1 style="font-size: 2.5em;">All About Me</h1> <!-- Smaller heading size for the "All About Me" section -->
+        <p>
+            I am a first-year Computer Engineering candidate known for my detail-oriented approach, strong work ethic, and passion for technology. During high school and my first two terms at the University of Waterloo, I consistently excelled academically, achieving top ten honors and earning both the President’s Scholarship of Distinction and the Embark FIRST Alumni scholarship.
+        </p>
+        <p>
+            My diverse experiences include thriving in both team-based and independent work environments. From part-time jobs, I've learned to take initiative and excel under minimal supervision. These experiences have prepared me to work on collaborative projects while also delivering results independently.
+        </p>
+        <p>
+            I've navigated a variety of academic and professional projects, and developed skills working with Unity, C#, C++, Python, and of course CSS and HTML. Notably, my internship with the Hamilton Wentworth Catholic District School Board's IT Department exposed me to a range of software applications. I contributed to projects such as migrating student data profiles from Trillium to Aspen, enhancing my proficiency in working with diverse software environments.
+        </p>
+        <p>
+            During my first co-op at the University of Waterloo, I explored the applications of VR in education and expanded my skills in Unity and C#. Additionally, I refined my UI design abilities through developing projects for The Meta Oculus 2 and 3 VR headsets.
+        </p>
+    </div>
 </body>
 </html>
+

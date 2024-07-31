@@ -23,7 +23,7 @@
         body {
             background-color: rgb(78, 38, 78);
             margin: 0; /* Remove default body margin */
-            padding: 0; /* Remove default body padding */
+            padding: 0; /* Remove default body padding, Padding is the space between the content of an element and its border. It adds internal spacing within an element, pushing the content away from the edges.*/
             font-family: Arial, Helvetica, sans-serif;
             color: white;
         }
@@ -47,6 +47,8 @@
             text-decoration: underline; /* Underline on hover */
         }
         .projects-container {
+            /*A layout model for arranging items within a container, .projects-container using flexbox to align and distribute project items. */
+
             display: flex; /* Use flexbox for layout, this allows two column format */
             justify-content: space-around; /* Distribute items evenly */
             flex-wrap: wrap; /* Allow items to wrap to next line if needed and stay within container */
@@ -109,7 +111,7 @@
     
     <h2>Project #1: VR Game</h2>
     <h4>Made using C# and Unity for Meta Occulus 3</h4>
-    <div class="video-wrapper">
+    <div class="video-wrapper"> <!--<div> is a standard HTML element used as a container, and the class video-wrapper is applied to style it with CSS, i made video wrapper above.-->
         <video controls>
             <source src="VideoGame_Condensed.mp4" type="video/mp4">
             Your browser does not support the video tag. <!--Dsplay message if video cannot be played-->

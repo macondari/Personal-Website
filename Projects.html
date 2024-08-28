@@ -58,6 +58,16 @@
             margin-bottom: 3em; /* Space between each project */
             text-align: center; /* Center align content inside project */
         }
+        .project2 {
+            width: 70%; /* Set width of each project */
+            margin-bottom: 3em; /* Space between each project */
+            text-align: center; /* Center align content inside project */
+        }
+        iframe {
+            width: 100%;
+            height: 400px; /* Adjust height as needed */
+            border: none;
+        }
         .project img {
             width: 100%; /* Make images fill their container */
             height: auto; /* Maintain aspect ratio */
@@ -109,7 +119,22 @@
 
     <h1>My Projects</h1>
     
-    <h2>Project #1: VR Game</h2>
+    <h2>Project #1: WHMIS Course in VR</h2>
+    <h4>Made using C# and Unity for Meta Occulus 2 and  devices3</h4>
+    <div class="video-wrapper"> <!--<div> is a standard HTML element used as a container, and the class video-wrapper is applied to style it with CSS, i made video wrapper above.-->
+        <video controls>
+            <source src="VideoGame_Condensed.mp4" type="video/mp4">
+            Your browser does not support the video tag. <!--Dsplay message if video cannot be played-->
+        </video>
+        <p class="videocaption">
+            I developed a VR game using Unity, designed as a WHIMIS educational course with five interactive stations, each featuring mini-games to assess player knowledge. The game is compatible with Meta Oculus devices and incorporates UI elements, visual effects, and gameplay mechanics. The attached video provides a complete walkthrough with audio commentary, demonstrating the game's features. Additionally, the included documentation offers a detailed analysis of the C# code. This project was presented to management to highlight the potential of VR in educational technology.
+        </p>
+        <div class="projects-container">
+            <div class="project2">
+                <iframe src="WHIMIS GAME DOC.pdf" title="PDF"></iframe>
+         </div>
+    </div>
+    <h2>Project #2: VR Game</h2>
     <h4>Made using C# and Unity for Meta Occulus 3</h4>
     <div class="video-wrapper"> <!--<div> is a standard HTML element used as a container, and the class video-wrapper is applied to style it with CSS, i made video wrapper above.-->
         <video controls>
@@ -129,7 +154,7 @@
             <p class="caption">
                 This image shows a clip of the Hangman game in progress. A word selected randomly from a text file is loaded into a dictionary list using StreamReader. The game mechanics include body part additions that update with each incorrect guess, and displaying the text accordingly. Additionally, all letters are converted to uppercase for consistency throughout the game.
             </p>
-        </div>
+    </div>
 
         <div class="project">
             <img src="Hangman Game Photos/hangman2.png" alt="Hangman Game Screenshot">
